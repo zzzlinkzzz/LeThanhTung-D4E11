@@ -39,20 +39,29 @@
 #     print('you can`t stop me')
 #     count = count + 1
 
-username = input("username : ")
-password = input("password : ")
+# username = input("username : ")
+# password = input("password : ")
 
-CheckID = (username == 'mindx' and password == 'password')
-count = 0
-ReSignIn = CheckID == False
-while ReSignIn:
-    if count == 5:
-        print("you are blocked!")
-        break
-    count = count + 1
-    username = input("username : ")
-    password = input("password : ")
+# CheckID = (username == 'mindx' and password == 'password')
+# count = 0
+# ReSignIn = CheckID == False
+# while ReSignIn:
+#     if count == 5:
+#         print("you are blocked!")
+#         break
+#     count = count + 1
+#     username = input("username : ")
+#     password = input("password : ")
 
 username = 'mindx'
 password = 'password'
+count = 0
 
+while True:
+    if count > 7:
+        print("you are blocked!")
+        break
+    ID_input = "ID : "
+    pass_input = "Password : "
+    if ID_input == username and pass_input == password:
+        "Welcome"
